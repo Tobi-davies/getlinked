@@ -257,6 +257,12 @@
       p {
         font-size: 1rem;
       }
+
+      span {
+        img {
+          min-width: 115px;
+        }
+      }
     }
 
     h1 {
@@ -268,7 +274,7 @@
       background-size: auto 370px, auto 370px;
 
       .hero_text {
-        padding-top: 40px;
+        padding-top: 30px;
 
         &_heading {
           h1 {
@@ -305,6 +311,23 @@
 
       div {
         font-size: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    &_igniting {
+      p {
+        max-width: 230px;
+        margin: auto;
+        border: 2px solid red;
+        span {
+          img {
+            min-width: 115px;
+          }
+        }
       }
     }
   }

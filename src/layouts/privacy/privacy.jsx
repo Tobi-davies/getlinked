@@ -30,7 +30,7 @@ const Privacy = () => {
               participating in our event, you consent to the practices described
               in this policy.
             </p>
-            <span>Licensing Policy</span>
+            <span className="licensing">Licensing Policy</span>
             <small>Here are terms of our Standard License:</small>
             <ul>
               <li>

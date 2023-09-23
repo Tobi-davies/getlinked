@@ -1,125 +1,125 @@
-// .intro {
-//   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.18);
-//   .container {
-//     max-width: 1200px;
-//     width: 100%;
-//     margin: auto;
-//     padding: 50px 27px 70px;
+.intro {
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.18);
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 27px 70px;
 
-//     &_image {
-//       background-image: url("../../assets/images/introduction/star1.svg"),
-//         url("../../assets/images/introduction/curly-arrow.svg");
-//       background-repeat: no-repeat, no-repeat;
-//       background-position: 10% 130px, 93% 102%;
-//       background-size: auto, 50px;
-//       padding-left: 40px !important;
-//       padding-right: 70px !important;
-//       .big_idea {
-//         max-width: 390px;
-//         width: 100%;
-//         float: right;
-//       }
-//     }
+    &_image {
+      background-image: url("../../assets/images/introduction/star1.svg"),
+        url("../../assets/images/introduction/curly-arrow.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 10% 130px, 93% 102%;
+      background-size: auto, 50px;
+      padding-left: 40px !important;
+      padding-right: 70px !important;
+      .big_idea {
+        max-width: 390px;
+        width: 100%;
+        float: right;
+      }
+    }
 
-//     &_text {
-//       padding-left: 2rem !important;
-//       padding-right: 35px !important;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       padding-top: 40px;
-//       background-image: url("../../assets/images/introduction/star2.svg");
-//       background-repeat: no-repeat;
-//       background-position: 93% 120px;
-//       background-size: auto;
-//       h2 {
-//         font-weight: 900;
-//         font-size: 30px;
+    &_text {
+      padding-left: 2rem !important;
+      padding-right: 35px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 40px;
+      background-image: url("../../assets/images/introduction/star2.svg");
+      background-repeat: no-repeat;
+      background-position: 93% 120px;
+      background-size: auto;
+      h2 {
+        font-weight: 900;
+        font-size: 30px;
 
-//         span {
-//           color: var(--primary-default-color);
-//         }
-//       }
+        span {
+          color: var(--primary-default-color);
+        }
+      }
 
-//       p {
-//         font-size: 14px;
-//         margin-top: 1rem;
-//         line-height: 1.6;
-//       }
-//     }
-//   }
-// }
+      p {
+        font-size: 14px;
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
 
-// @media (max-width: 992px) {
-//   .intro {
-//     // padding: 30px 27px;
+@media (max-width: 992px) {
+  .intro {
+    // padding: 30px 27px;
 
-//     .container {
-//       //   max-width: 1200px;
-//       //   width: 100%;
-//       //   margin: auto;
-//       padding: 30px 27px 50px;
-//       //   border: 2px solid green;
+    .container {
+      //   max-width: 1200px;
+      //   width: 100%;
+      //   margin: auto;
+      padding: 30px 27px 50px;
+      //   border: 2px solid green;
 
-//       &_image {
-//         text-align: center;
-//         padding-left: 15px !important;
-//         padding-right: 15px !important;
+      &_image {
+        text-align: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
 
-//         .big_idea {
-//           margin: auto;
-//           float: unset;
-//         }
-//       }
-//       &_text {
-//         text-align: center;
-//         max-width: 600px;
-//         margin: auto;
-//         background-position: 80% 80px;
-//         background-size: 20px;
-//         padding-left: 20px !important;
-//         padding-right: 20px !important;
-//       }
-//     }
-//   }
-// }
-// @media (max-width: 575px) {
-//   .intro {
-//     .container {
-//       //   max-width: 1200px;
-//       //   width: 100%;
-//       //   margin: auto;
-//       padding: 30px 32px 50px;
-//       //   border: 2px solid green;
+        .big_idea {
+          margin: auto;
+          float: unset;
+        }
+      }
+      &_text {
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        background-position: 80% 80px;
+        background-size: 20px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .intro {
+    .container {
+      //   max-width: 1200px;
+      //   width: 100%;
+      //   margin: auto;
+      padding: 30px 32px 50px;
+      //   border: 2px solid green;
 
-//       &_image {
-//         padding-bottom: 50px;
-//         background-position: 10% 70px, 50% 99%;
-//         background-size: 10px, 40px;
-//         // text-align: center;
-//         // padding-left: 15px !important;
-//         // padding-right: 15px !important;
-//         .big_idea {
-//           //   margin: auto;
-//           //   float: unset;
-//           max-width: 264px;
-//         }
-//       }
-//       &_text {
-//         padding-top: 10px;
-//         padding-left: 5px !important;
-//         padding-right: 5px !important;
-//         background-position: 99% 15px;
-//         background-size: 10px;
-//         // text-align: center;
+      &_image {
+        padding-bottom: 50px;
+        background-position: 10% 70px, 50% 99%;
+        background-size: 10px, 40px;
+        // text-align: center;
+        // padding-left: 15px !important;
+        // padding-right: 15px !important;
+        .big_idea {
+          //   margin: auto;
+          //   float: unset;
+          max-width: 264px;
+        }
+      }
+      &_text {
+        padding-top: 10px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        background-position: 99% 15px;
+        background-size: 10px;
+        // text-align: center;
 
-//         h2 {
-//           font-size: 20px;
-//         }
-//         p {
-//           font-size: 13px;
-//         }
-//       }
-//     }
-//   }
-// }
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

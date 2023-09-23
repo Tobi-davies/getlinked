@@ -47,7 +47,7 @@
         font-size: 14px;
         line-height: 1.5;
       }
-      span {
+      .licensing {
         margin-top: 1rem;
         margin-bottom: 0.4rem;
         display: block;
@@ -86,7 +86,10 @@
       }
 
       .btn {
-        text-align: center;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
       }
     }
   }
@@ -216,6 +219,11 @@
             span {
               font-size: 12px;
             }
+          }
+
+          .btn {
+            text-align: center;
+            border: 3px solid red;
           }
         }
       }
