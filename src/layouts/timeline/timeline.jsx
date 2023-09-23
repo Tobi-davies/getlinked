@@ -41,7 +41,11 @@ const Timeline = () => {
 
         <div className="timeline">
           <div className="timeline_title col-12 col-lg-5">
-            <h3 data-animation="header">Teams Registration ends</h3>
+            <h3
+            // data-animation="header"
+            >
+              Teams Registration ends
+            </h3>
             <p>Interested Participants are no longer Allowed to register</p>
           </div>
           <div className="col-12 col-lg-2 timeline_number">
@@ -55,7 +59,10 @@ const Timeline = () => {
             <h3 data-animation="header">
               Announcement of the accepted teams and ideas
             </h3>
-            <p data-animation="paragraph">
+            <p
+
+            // data-animation="paragraph"
+            >
               All teams whom idea has been accepted into getlinked tech
               hackathon 1.0 2023 are formally announced
             </p>
