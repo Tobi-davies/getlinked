@@ -1,8 +1,26 @@
 import React from "react";
 import BigIdea from "../../assets/images/introduction/big-idea.svg";
 import "./intro.scss";
+// import { gsap } from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
+  //   React.useEffect(() => {
+  //     gsap.set("h2", {
+  //       opacity: 0,
+  //       yPercent: 100,
+  //     });
+
+  //     gsap.to("h2", {
+  //       scrollTrigger: "h2",
+  //       duration: 0.8,
+  //       opacity: 1,
+  //       yPercent: 0,
+  //       ease: "easeOut",
+  //       delay: 0.2,
+  //     });
+  //   });
   return (
     <div className="intro">
       <div className="container row">
@@ -15,7 +33,7 @@ const Intro = () => {
             <span>tech Hackathon 1.0</span>
           </h2>
 
-          <p>
+          <p data-animation="paragraph">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the

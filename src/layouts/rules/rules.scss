@@ -3,6 +3,11 @@
   position: relative;
 
   .rules_container {
+    background-image: url("../../assets/images/rules/star1.svg"),
+      url("../../assets/images/rules/star2.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20% 15%, 52% 80%;
+
     .rules_container_text {
       display: flex;
       flex-direction: column;
@@ -119,6 +124,8 @@
     // border-bottom: 1px solid rgba($color: #fff, $alpha: 0.18);
 
     .rules_container {
+      background-position: 15% 25%, 92% 60%;
+      background-size: 10px;
       //   flex-direction: column-reverse;
       .rules_container_text {
         // text-align: center;

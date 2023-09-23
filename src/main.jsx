@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import GlobalStyles from "./components/global-styles/global-styles";
 import { QueryClient, QueryClientProvider } from "react-query";
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
 
 const queryClient = new QueryClient();
 

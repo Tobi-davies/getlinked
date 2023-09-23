@@ -4,8 +4,6 @@ import Bulb from "../../assets/images/hero/bulb.svg";
 import Fire from "../../assets/images/hero/fire.svg";
 import Chain from "../../assets/images/hero/chain.svg";
 import Curly from "../../assets/images/hero/curly.svg";
-// import Lights from "../../assets/images/hero/vr-lights.png";
-// import Man from "../../assets/images/hero/man-glasses.png";
 import Btn from "../../components/btn/btn";
 
 const Hero = () => {
@@ -20,9 +18,8 @@ const Hero = () => {
             <img src={Curly} alt="Curly" />
           </span>
         </p>
-        {/* <img src={Curly} alt="Curly line" /> */}
       </div>
-      <div className="hero_flex ">
+      <div className="hero_flex">
         <div className="hero_text  container_box">
           <div className="hero_text_heading">
             <h1>
@@ -41,7 +38,7 @@ const Hero = () => {
             <img src={Chain} alt="" className="hero_hackathon_chain" />
             <img src={Fire} alt="" />
           </div>
-          <p>
+          <p data-animation="paragraph">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
@@ -60,12 +57,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="hero_images">
-          <figure>
-            <img src={Lights} alt="" className="lights" />
-            <img src={Man} alt="" className="man" />
-          </figure>
-        </div> */}
       </div>
     </section>
   );

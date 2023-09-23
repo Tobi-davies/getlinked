@@ -5,8 +5,15 @@ import Contact from "./pages/contact/contact";
 import Register from "./pages/register/register";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { split } from "./animations/text";
+import { useEffect } from "react";
+import scroll from "./animations/scroll";
+// scroll();
 
 function App() {
+  useEffect(() => {
+    split();
+  });
   return (
     <>
       {" "}

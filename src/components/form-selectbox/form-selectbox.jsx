@@ -57,7 +57,7 @@ const customStyles = {
   indicatorSeparator: (provided, state) => {
     return {
       ...provided,
-      display: "none",
+      display: "none !important",
     };
   },
 

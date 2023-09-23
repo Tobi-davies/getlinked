@@ -3,6 +3,11 @@
   margin: auto;
   position: relative;
   border-top: 1px solid rgba($color: #fff, $alpha: 0.18);
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.18);
+  background-image: url("../../assets/images/hero/metrix.png");
+
+  background-repeat: no-repeat;
+  background-position: right;
 
   &_igniting {
     padding: 25px 40px;
@@ -46,11 +51,14 @@
     background-repeat: no-repeat, no-repeat;
     background-position: 90% 0, top right;
     background-size: auto 630px, auto 680px;
-    // background-size: 300px, auto auto;
-    // background-size: 300px, contain;
 
     .hero_text {
       padding-top: 90px;
+      background-image: url("../../assets/images/hero/star1.svg"),
+        url("../../assets/images/hero/star2.svg"),
+        url("../../assets/images/hero/star3.svg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 5% 0%, 50% 5%, 40% 80%;
 
       &_heading {
         position: relative;
@@ -127,9 +135,6 @@
       text-align: center;
     }
 
-    h1 {
-    }
-
     &_flex {
       height: 1050px;
 
@@ -153,47 +158,28 @@
 
     &_hackathon {
       justify-content: center;
-
-      //   &_chain {
-      //     // width: 65px;
-      //   }
-      //   img:last-child {
-      //     // width: 45px;
-      //   }
     }
 
     &_countdown {
       justify-content: center;
-
-      //   div {
-
-      //     span {
-
-      //     }
-      //   }
     }
   }
 }
 
 @media (max-width: 992px) {
   .hero {
+    background-image: unset;
+
     &_igniting {
       text-align: center;
 
       p {
         font-size: 20px;
       }
-
-      //   img {
-      //     // width: 180px;
-      //   }
     }
 
     h1 {
       font-size: 45px;
-
-      span {
-      }
     }
 
     &_flex {
@@ -245,7 +231,6 @@
       width: 150px;
       height: 150px;
       filter: blur(6rem);
-      //   filter: unset;
       left: 0;
       top: 8rem;
     }
@@ -275,6 +260,8 @@
 
       .hero_text {
         padding-top: 30px;
+        background-position: 25% 0%, 90% 5%, 70% 70%;
+        background-size: 10px;
 
         &_heading {
           h1 {

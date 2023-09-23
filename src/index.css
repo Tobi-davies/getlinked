@@ -70,6 +70,34 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+span.word_wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+[data-animation="header"] span.word {
+  overflow-y: hidden;
+  position: relative;
+}
+/* .child_wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.abs {
+  position: absolute;
+}
+.ta_center {
+  text-align: center;
+}
+.mg_au {
+  margin: 0 auto;
+} */
+.active {
+  color: #d434fe;
+  font-weight: 500;
+}
 /* a {
   font-weight: 500;
   color: #646cff;
@@ -123,3 +151,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+@media (max-width: 992px) {
+  .container_box {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

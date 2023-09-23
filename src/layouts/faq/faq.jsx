@@ -41,14 +41,17 @@ const Faq = () => {
               <span>Question</span>
             </h2>
 
-            <p>
+            <p data-animation="paragraph">
               We got answers to the questions that you might want to ask about
               <b> getlinked Hackathon 1.0</b>
             </p>
 
             <ul>
               {FaqData.map((question, i) => (
-                <li key={i}>
+                <li
+                  key={i}
+                  // data-animation="paragraph"
+                >
                   <span>{question.title}</span>
                   <HiOutlinePlus color="#D434FE" />
                 </li>
