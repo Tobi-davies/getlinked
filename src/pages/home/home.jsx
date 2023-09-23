@@ -9,6 +9,7 @@ import Rules from "../../layouts/rules/rules";
 import Criteria from "../../layouts/criteria/criteria";
 import Faq from "../../layouts/faq/faq";
 import Header from "../../layouts/header/header";
+import Footer from "../../layouts/footer/footer";
 
 const Home = () => {
   return (
@@ -20,9 +21,10 @@ const Home = () => {
       <Criteria />
       <Faq />
       <Timeline />
-      {/* <Rewards /> */}
+      <Rewards />
       <Partners />
       <Privacy />
+      <Footer />
     </>
   );
 };
