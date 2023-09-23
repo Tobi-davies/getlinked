@@ -9,15 +9,15 @@ import { useMediaQuery } from "react-responsive";
 const PRIMARY_NAV_ITEMS = [
   {
     title: "Timeline",
-    path: "/",
+    path: "/timeline",
   },
   {
     title: "Overview",
-    path: "/",
+    path: "/overview",
   },
   {
     title: "FAQs",
-    path: "/",
+    path: "/faqs",
   },
   {
     title: "Contact",
@@ -36,7 +36,6 @@ const Header = () => {
   const styles = {
     extra: {
       transform: `translateX(${isMobile ? "0" : "-100vw"})`,
-      border: "3px solid red",
     },
   };
   return (

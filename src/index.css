@@ -98,6 +98,9 @@ span.word_wrap {
   color: #d434fe;
   font-weight: 500;
 }
+.inactive {
+  color: white;
+}
 /* a {
   font-weight: 500;
   color: #646cff;
