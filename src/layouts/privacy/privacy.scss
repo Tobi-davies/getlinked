@@ -1,0 +1,252 @@
+.privacy {
+  //   border: 2px solid red;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  &_policy {
+    padding-top: 3rem;
+    padding-left: 3rem !important;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 0.4rem;
+
+      span {
+        color: var(--primary-default-color) !important;
+      }
+    }
+
+    small {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 1.7rem;
+      display: block;
+    }
+    p {
+      font-size: 14px;
+      max-width: 470px;
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    &_card {
+      max-width: 490px;
+      padding: 2.7rem;
+      border: 1px solid var(--primary-default-color);
+      border-radius: 5px;
+      background: linear-gradient(
+        135deg,
+        rgba(217, 217, 217, 0.1),
+        rgba(217, 217, 217, 0)
+      );
+      //   background: transparent;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      //   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      span {
+        margin-top: 1rem;
+        margin-bottom: 0.4rem;
+        display: block;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--primary-default-color);
+      }
+
+      small {
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: unset;
+        color: #fff;
+      }
+
+      ul {
+        margin-bottom: 10px;
+        li {
+          display: flex;
+          //   align-items: flex-start;
+          gap: 1rem;
+
+          img {
+            margin-top: -15px;
+            width: 13px;
+            display: block;
+          }
+
+          span {
+            display: block;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .btn {
+        text-align: center;
+      }
+    }
+  }
+
+  &_images {
+    position: relative;
+    .lock {
+      max-width: 430px;
+      margin-left: auto;
+      img {
+        width: 100%;
+        margin-left: auto;
+        // border: 2px solid red;
+      }
+    }
+    .key {
+      position: absolute;
+      top: 10rem;
+      right: 2.2rem;
+      width: 450px;
+      //   border: 2px solid red;
+    }
+  }
+}
+.priv {
+  position: relative;
+
+  .privacy_blur1 {
+    background-color: #d434fe;
+    width: 200px;
+    height: 100px;
+    filter: blur(7rem);
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .privacy {
+    &_policy {
+      margin-bottom: 3rem;
+      padding-left: 15px !important;
+      h2,
+      small {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &_card {
+        margin: auto;
+
+        p,
+        small {
+          text-align: left;
+        }
+      }
+    }
+    &_images {
+      padding-bottom: 200px;
+      position: relative;
+      .lock {
+        max-width: 430px;
+        margin: auto;
+        img {
+          width: 100%;
+          height: auto;
+          //   margin-left: auto;
+          // border: 2px solid red;
+        }
+      }
+      .key {
+        position: absolute;
+        top: 10rem;
+        right: 29%;
+        max-width: 450px;
+        // img {
+        width: 100%;
+        height: auto;
+        // }
+
+        // margin: auto;
+
+        //   border: 2px solid red;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .privacy {
+    padding-top: 3rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    &_policy {
+      padding-top: unset;
+      //   margin-bottom: 3rem;
+      //   padding-left: 15px !important;
+      h2 {
+        font-size: 20px;
+      }
+      small {
+        font-size: 12px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      &_card {
+        margin: auto;
+        padding: 2rem 1rem;
+
+        span {
+          font-size: 13px;
+        }
+
+        p {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          li {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    &_images {
+      padding-bottom: 90px;
+      //   position: relative;
+      .lock {
+        max-width: 250px;
+        // margin: auto;
+        img {
+          //   width: 100%;
+          //   height: auto;
+          //   margin-left: auto;
+          // border: 2px solid red;
+        }
+      }
+      .key {
+        // position: absolute;
+        top: 6rem;
+        right: 19%;
+        max-width: 264px;
+        // img {
+        // width: 100%;
+        // height: auto;
+        // }
+
+        // margin: auto;
+
+        //   border: 2px solid red;
+      }
+    }
+  }
+}

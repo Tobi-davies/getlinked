@@ -1,0 +1,94 @@
+.hero {
+  max-width: 1512px;
+  margin: auto;
+  border-bottom: 1px solid #fff;
+
+  border: 3px solid red;
+
+  &_igniting {
+    // display: flex;
+    // align-self: flex-end;
+    padding: 25px 40px;
+    // border: 2px solid red;
+    text-align: right;
+
+    span {
+      display: block;
+      font-style: italic;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    img {
+      width: 180px;
+    }
+  }
+
+  h1 {
+    font-size: 65px;
+    font-weight: 900;
+
+    span {
+      color: var(--primary-default-color);
+      margin-left: 0.8rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &_flex {
+    // height: 700px;
+    background-image: url("../../assets/images/hero/vr-lights.png"),
+      url("../../assets/images/hero/man-glasses.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 90% 0, top right;
+    background-size: auto 630px, auto 650px;
+    // background-size: 300px, auto auto;
+    // background-size: 300px, contain;
+    border: 1px solid white;
+
+    .container {
+      padding-top: 80px;
+
+      p {
+        font-weight: 400;
+        max-width: 420px;
+        font-size: 16px;
+        border: 1px solid red;
+        margin-top: 10px;
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  &_hackathon {
+    display: flex;
+
+    &_chain {
+      width: 65px;
+    }
+    img:last-child {
+      width: 45px;
+    }
+  }
+
+  &_countdown {
+    margin-top: 60px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+
+    div {
+      font-family: "Unica One", cursive;
+      font-weight: 400;
+      font-size: 50px;
+
+      span {
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+      }
+    }
+  }
+}

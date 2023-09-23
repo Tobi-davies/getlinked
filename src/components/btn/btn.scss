@@ -1,0 +1,22 @@
+button {
+  background-image: linear-gradient(to right, #ff26b9, #903aff);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  // span {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   gap: 0.5rem;
+  // }
+}

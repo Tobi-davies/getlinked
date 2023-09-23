@@ -1,0 +1,88 @@
+.rewards {
+  &_container {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 40px;
+    &_images {
+      figure {
+        img {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+    }
+    &_text {
+      h2 {
+        font-size: 28px;
+        margin-bottom: 0.9rem;
+
+        span {
+          color: var(--primary-default-color) !important;
+        }
+      }
+
+      P {
+        max-width: 400px;
+        margin-bottom: 4rem;
+      }
+
+      .medals {
+        display: grid;
+        grid-template-columns: repeat(3, 190px);
+        gap: 20px;
+        align-items: center;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 20px 24px 30px;
+          border-radius: 8px;
+          text-align: center;
+          p {
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 0.3rem;
+          }
+          small {
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          span {
+            color: var(--primary-default-color);
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+
+        .first_position {
+          &_card {
+            background-color: rgba($color: #903aff, $alpha: 0.12);
+            border: 1px solid #903aff;
+            height: 300px;
+          }
+        }
+        .second_position {
+          &_card {
+            background-color: rgba($color: #d434fe, $alpha: 0.12);
+            height: 250px;
+            border: 1px solid #d434fe;
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-end;
+          }
+        }
+        .third_position {
+          &_card {
+            background-color: rgba($color: #d434fe, $alpha: 0.12);
+            border: 1px solid #d434fe;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
