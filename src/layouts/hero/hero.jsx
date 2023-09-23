@@ -4,18 +4,35 @@ import Bulb from "../../assets/images/hero/bulb.svg";
 import Fire from "../../assets/images/hero/fire.svg";
 import Chain from "../../assets/images/hero/chain.svg";
 import Curly from "../../assets/images/hero/curly.svg";
+// import Lights from "../../assets/images/hero/vr-lights.png";
+// import Man from "../../assets/images/hero/man-glasses.png";
 import Btn from "../../components/btn/btn";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
+      <div className="hero_blur1"></div>
       <div className="hero_igniting">
-        <span>Igniting a Revolution in HR Innovation</span>
-        <img src={Curly} alt="Curly line" />
+        <p>
+          Igniting a Revolution in
+          <span>
+            HR Innovation
+            <img src={Curly} alt="Curly" />
+          </span>
+        </p>
+        {/* <img src={Curly} alt="Curly line" /> */}
       </div>
-      <div className="hero_flex">
-        <div className="container">
-          <h1> getlinked Tech </h1>
+      <div className="hero_flex ">
+        <div className="hero_text  container_box">
+          <div className="hero_text_heading">
+            <h1>
+              getlinked
+              <span>
+                Tech
+                <img src={Bulb} alt="bulb" />
+              </span>
+            </h1>
+          </div>
           <div className="hero_hackathon">
             <h1>
               Hackathon
@@ -43,8 +60,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* <div className="hero_images">
+          <figure>
+            <img src={Lights} alt="" className="lights" />
+            <img src={Man} alt="" className="man" />
+          </figure>
+        </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

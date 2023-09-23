@@ -1,18 +1,14 @@
 .hero {
   max-width: 1512px;
   margin: auto;
-  border-bottom: 1px solid #fff;
-
-  border: 3px solid red;
+  position: relative;
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.18);
 
   &_igniting {
-    // display: flex;
-    // align-self: flex-end;
     padding: 25px 40px;
-    // border: 2px solid red;
     text-align: right;
 
-    span {
+    p {
       display: block;
       font-style: italic;
       font-size: 25px;
@@ -20,8 +16,15 @@
       line-height: 1;
     }
 
-    img {
-      width: 180px;
+    span {
+      margin-left: 5px;
+      position: relative;
+      img {
+        width: 100%;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
     }
   }
 
@@ -37,24 +40,39 @@
   }
 
   &_flex {
-    // height: 700px;
+    height: 670px;
     background-image: url("../../assets/images/hero/vr-lights.png"),
       url("../../assets/images/hero/man-glasses.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 90% 0, top right;
-    background-size: auto 630px, auto 650px;
+    background-size: auto 630px, auto 680px;
     // background-size: 300px, auto auto;
     // background-size: 300px, contain;
-    border: 1px solid white;
 
-    .container {
-      padding-top: 80px;
+    .hero_text {
+      padding-top: 90px;
+
+      &_heading {
+        position: relative;
+
+        h1 {
+          span {
+            position: relative;
+            color: #fff;
+            img {
+              position: absolute;
+              right: 15px;
+              bottom: 55px;
+              width: 50px;
+            }
+          }
+        }
+      }
 
       p {
         font-weight: 400;
         max-width: 420px;
         font-size: 16px;
-        border: 1px solid red;
         margin-top: 10px;
         margin-bottom: 3.5rem;
       }
@@ -88,6 +106,205 @@
         font-size: 14px;
         font-family: "Montserrat", sans-serif;
         margin: 0;
+      }
+    }
+  }
+
+  .hero_blur1 {
+    background-color: #a866fd;
+    width: 150px;
+    height: 150px;
+    filter: blur(6rem);
+    position: absolute;
+    left: 20rem;
+    top: 8rem;
+  }
+}
+
+@media (max-width: 1170px) {
+  .hero {
+    &_igniting {
+      text-align: center;
+    }
+
+    h1 {
+    }
+
+    &_flex {
+      height: 1050px;
+
+      background-position: center bottom, bottom center;
+      background-size: auto 500px, auto 500px;
+
+      .hero_text {
+        padding-top: 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          margin: auto;
+
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+
+    &_hackathon {
+      justify-content: center;
+
+      //   &_chain {
+      //     // width: 65px;
+      //   }
+      //   img:last-child {
+      //     // width: 45px;
+      //   }
+    }
+
+    &_countdown {
+      justify-content: center;
+
+      //   div {
+
+      //     span {
+
+      //     }
+      //   }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    &_igniting {
+      text-align: center;
+
+      p {
+        font-size: 20px;
+      }
+
+      //   img {
+      //     // width: 180px;
+      //   }
+    }
+
+    h1 {
+      font-size: 45px;
+
+      span {
+      }
+    }
+
+    &_flex {
+      height: 850px;
+
+      background-size: auto 450px, auto 450px;
+
+      .hero_text {
+        &_heading {
+          h1 {
+            span {
+              img {
+                right: 5px;
+                bottom: 40px;
+                width: 40px;
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 16px;
+
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &_hackathon {
+      justify-content: center;
+
+      &_chain {
+        width: 50px;
+      }
+      img:last-child {
+        width: 35px;
+      }
+    }
+
+    &_countdown {
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      div {
+        font-size: 48px;
+      }
+    }
+    .hero_blur1 {
+      width: 150px;
+      height: 150px;
+      filter: blur(6rem);
+      //   filter: unset;
+      left: 0;
+      top: 8rem;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .hero {
+    &_igniting {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    &_flex {
+      height: 670px;
+      background-size: auto 370px, auto 370px;
+
+      .hero_text {
+        padding-top: 40px;
+
+        &_heading {
+          h1 {
+            span {
+              img {
+                right: 15px;
+                bottom: 30px;
+                width: 18px;
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 13px;
+
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    &_hackathon {
+      &_chain {
+        width: 32px;
+      }
+      img:last-child {
+        width: 22px;
+      }
+    }
+
+    &_countdown {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      div {
+        font-size: 45px;
       }
     }
   }

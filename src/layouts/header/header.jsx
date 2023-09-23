@@ -4,6 +4,7 @@ import "./header.scss";
 import Hamburger from "../../assets/images/header/hamburger.svg";
 import Close from "../../assets/images/header/close.svg";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const PRIMARY_NAV_ITEMS = [
   {
@@ -28,9 +29,14 @@ const Header = () => {
   const navigate = useNavigate();
   const [isMobile, setMobile] = React.useState(false);
 
+  const isLaptop = useMediaQuery({
+    query: `(min-width: 992px)`,
+  });
+
   const styles = {
     extra: {
       transform: `translateX(${isMobile ? "0" : "-100vw"})`,
+      border: "3px solid red",
     },
   };
   return (
@@ -60,7 +66,6 @@ const Header = () => {
                         // marginRight: "40px",
                       }
                     }
-                    // onClick={() => setCurrentView(i + 1)}
                   >
                     {/* <a href="#"> */}
                     {navLink.title}
@@ -78,45 +83,48 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="sidebar" style={styles.extra}>
-        <div onClick={() => setMobile(false)} className="close">
-          <img src={Close} alt="Close" />
-        </div>
 
-        <ul>
-          {PRIMARY_NAV_ITEMS.map((navLink, i) => {
-            return (
-              <li key={i}>
-                <NavLink
-                  to={navLink.path && navLink.path}
-                  className={({ isActive }) =>
-                    isActive ? "active" : "inactive"
-                  }
-                  style={
-                    {
-                      // display: "inline-block",
-                      // padding: "8px 0",
-                      // color: "#000",
-                      // marginRight: "40px",
+      {!isLaptop && (
+        <div className="sidebar" style={styles.extra}>
+          <div onClick={() => setMobile(false)} className="close">
+            <img src={Close} alt="Close" />
+          </div>
+
+          <ul>
+            {PRIMARY_NAV_ITEMS.map((navLink, i) => {
+              return (
+                <li key={i}>
+                  <NavLink
+                    to={navLink.path && navLink.path}
+                    className={({ isActive }) =>
+                      isActive ? "active" : "inactive"
                     }
-                  }
-                  onClick={() => setMobile(false)}
-                >
-                  {navLink.title}
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <Btn
-          onClick={() => {
-            navigate("/register");
-            setMobile(false);
-          }}
-        >
-          Register
-        </Btn>
-      </div>
+                    style={
+                      {
+                        // display: "inline-block",
+                        // padding: "8px 0",
+                        // color: "#000",
+                        // marginRight: "40px",
+                      }
+                    }
+                    onClick={() => setMobile(false)}
+                  >
+                    {navLink.title}
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <Btn
+            onClick={() => {
+              navigate("/register");
+              setMobile(false);
+            }}
+          >
+            Register
+          </Btn>
+        </div>
+      )}
     </>
   );
 };
