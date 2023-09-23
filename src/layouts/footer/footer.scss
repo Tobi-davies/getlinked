@@ -1,10 +1,122 @@
 footer {
   background: #100b20;
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   .footer_container {
     display: flex;
-    max-width: 1000px;
+    flex-wrap: wrap;
+    max-width: 1152px;
     margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .first {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo {
+        cursor: pointer;
+        font-size: 28px;
+        font-family: ClashDisplay;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        span:first-child {
+          color: #fff;
+        }
+        span:last-child {
+          color: var(--primary-default-color);
+        }
+      }
+
+      p {
+        font-size: 12px;
+        max-width: 420px;
+      }
+
+      p:last-child {
+        justify-self: flex-end;
+
+        span {
+          color: var(--primary-default-color);
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .footer_links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-top: 15px;
+
+      li {
+        font-size: 12px;
+      }
+
+      li:first-child {
+        color: #d434fe;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      li:last-child {
+        color: #d434fe;
+        display: flex;
+        gap: 0.5rem;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #fff;
+        }
+      }
+    }
+
+    .footer_contact {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        padding-top: 15px;
+        li {
+          font-size: 12px;
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+
+          span {
+            max-width: 90px;
+            margin-top: -2px;
+          }
+        }
+        li:first-child {
+          color: #d434fe;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footer_rights {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .first,
+  .footer_links {
+    margin-bottom: 2rem;
+  }
+
+  .first {
+    div {
+      p {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
