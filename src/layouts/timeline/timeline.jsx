@@ -14,7 +14,7 @@ const Timeline = () => {
         <div className="timeline">
           <div className="timeline_title col-12 col-lg-5">
             <h3 data-animation="header">Hackathon Announcement</h3>
-            <p data-animation="paragraph">
+            <p>
               The getlinked tech hackathon 1.0 is formally announced to the
               general public and teams begin to get ready to register
             </p>
@@ -28,7 +28,7 @@ const Timeline = () => {
         <div className="timeline">
           <div className="timeline_title col-12 col-lg-5">
             <h3 data-animation="header">Teams Registration begins</h3>
-            <p data-animation="paragraph">
+            <p>
               Interested teams can now show their interest in the getlinked tech
               hackathon 1.0 2023 by proceeding to register
             </p>
@@ -59,10 +59,7 @@ const Timeline = () => {
             <h3 data-animation="header">
               Announcement of the accepted teams and ideas
             </h3>
-            <p
-
-            // data-animation="paragraph"
-            >
+            <p>
               All teams whom idea has been accepted into getlinked tech
               hackathon 1.0 2023 are formally announced
             </p>
@@ -78,7 +75,7 @@ const Timeline = () => {
             <h3 data-animation="header">
               Getlinked Hackathon 1.0 Offically Begins
             </h3>
-            <p data-animation="paragraph">
+            <p>
               Accepted teams can now proceed to build their ground breaking
               skill driven solutions
             </p>
@@ -92,7 +89,7 @@ const Timeline = () => {
         <div className="timeline">
           <div className="timeline_title col-12 col-lg-5">
             <h3 data-animation="header">Demo Day</h3>
-            <p data-animation="paragraph">
+            <p>
               Teams get the opportunity to pitch their projects to judges. The
               winner of the hackathon will also be announced on this day
             </p>
