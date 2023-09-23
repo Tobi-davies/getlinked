@@ -3,31 +3,31 @@
 
   h2 {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 0.9rem;
+  }
+
+  .timeline_intro {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 4.5rem;
   }
 
   .timelines {
     position: relative;
     padding-top: 10px;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 100%;
-      background: #d434fe;
-      top: 0;
-      left: 49.9%;
-      z-index: -1;
-    }
+
     .timeline {
       display: flex;
-      justify-content: space-between;
-      padding-top: 50px;
+
+      height: 120px;
+      align-items: flex-end;
 
       &:nth-child(even) {
         flex-direction: row-reverse;
-        // &_title {
-        //   text-align: left;
-        // }
+
         .timeline_title {
           text-align: left;
 
@@ -40,11 +40,17 @@
           text-align: right;
         }
       }
-      div {
-        // border: 2px solid white;
+      &:nth-child(1) p {
+        max-width: 425px;
+        width: 100%;
+      }
+      &:nth-child(2) p {
+        max-width: 430px;
+      }
+      &:nth-child(3) p {
+        max-width: 390px;
       }
       &_title {
-        // border: 2px solid white;
         text-align: right;
 
         h3 {
@@ -56,7 +62,6 @@
         p {
           font-size: 14px;
           max-width: 400px;
-          border: 1px solid red;
           margin-left: auto;
         }
       }
@@ -78,6 +83,19 @@
           font-size: 18px;
           font-weight: 700;
           border: 7px solid var(--primary-bg-color);
+          z-index: 2;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 75px;
+            background: #d434fe;
+            bottom: 3.55rem;
+            // left: 39.9%;
+            left: 48.9%;
+            z-index: 1;
+          }
         }
       }
 
@@ -87,6 +105,134 @@
         color: var(--primary-default-color);
         font-size: 18px;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline_container {
+    .timelines {
+      max-width: 600px !important;
+      width: 100%;
+      margin: auto;
+      .timeline {
+        position: relative;
+        height: unset;
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        &:nth-child(even) {
+          flex-direction: column !important;
+
+          .timeline_date {
+            text-align: left;
+          }
+        }
+
+        &_title {
+          padding-left: 4rem;
+          text-align: left;
+
+          // h3 {
+
+          // }
+          p {
+            margin-right: auto;
+            margin-left: unset;
+          }
+        }
+
+        &_number {
+          align-self: flex-start;
+          span {
+            position: absolute;
+            left: 0 !important;
+            bottom: -2.3rem !important;
+            height: 35px;
+            width: 35px;
+            font-size: 15px;
+            border: unset;
+
+            &::after {
+              width: 3px;
+              height: 78px;
+              bottom: 2.55rem;
+              left: 48.9%;
+              z-index: 1;
+            }
+          }
+        }
+
+        &_date {
+          align-self: flex-start;
+          padding-left: 4rem;
+          padding-bottom: 0;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .timeline_container {
+    .timeline_intro {
+      margin-bottom: 2rem;
+    }
+    .timelines {
+      .timeline {
+        position: relative;
+        height: 110px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        margin-bottom: 0.5rem;
+        // &:nth-child(even) {
+        //   .timeline_date {
+        //   }
+        // }
+
+        &:nth-child(3) p {
+          max-width: 290px;
+        }
+
+        &_title {
+          padding-left: 1.5rem;
+          align-self: flex-start;
+
+          h3 {
+            font-size: 12px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+
+        &_number {
+          padding-bottom: 0;
+
+          span {
+            bottom: 5.2rem !important;
+            height: 20px;
+            width: 20px;
+            font-size: 12px;
+            &::after {
+              width: 2px;
+              height: 70px;
+              bottom: 1.7rem;
+              left: 47.9%;
+            }
+          }
+        }
+
+        &_date {
+          font-size: 12px;
+          padding-left: 1.5rem;
+          position: relative;
+          bottom: 7.4rem;
+          padding-top: 1rem;
+        }
       }
     }
   }
